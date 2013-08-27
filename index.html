@@ -4,12 +4,18 @@
 <meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
 <link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-
+<script type="text/javascript" src="js/dasliderplugin.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#page').dasliderplugin();   
+    });
+</script>   
 
 </head>
+<body>
 
-<button onclick="slideSwitchPrev()">Previous</button>
+<div id="page">
+<img class="prev-button"src="resources/left.jpg" onclick="slideSwitchPrev()">
 
 <div id="slideshow">
     <div class="active">
@@ -33,7 +39,9 @@
     </div>    
 </div>
 
-<button onclick="slideSwitchNext()">Next</button>
+<img class="next-button"src="resources/right.jpg" onclick="slideSwitchNext()">
+</div>
+
 
 
 </body>
